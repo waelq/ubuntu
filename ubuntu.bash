@@ -1,1 +1,1 @@
-coktilat@coktilat-VirtualBox:~/Download$ chmod 600 code.py
+coktilat@coktilat-VirtualBox:~/Download$ chmod 777 code.py
