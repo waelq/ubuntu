@@ -1,0 +1,166 @@
+cli = command line interface
+gui = graphical user inerface
+
+
+shell ==keyboard
+bash= bouren agian shell
+
+pwd = print working directory >> file path now
+cd =change directory
+cd newfile >> in file
+cd .. >> out up levele
+
+mkdir name >> create new file directory
+mkdir 'Fn Ln' >> create new file directory
+
+
+cp fileNmaeToCopy theCopyfile >> copy directory
+cp fileNmaeToCopy paseInTheFolder >> copy directory
+cp -r folder folderCopy >> copy directory ??? if folderCopy exist it copy folder in the folderCopy
+cp -i fileNmaeToCopy paseInTheFolder >> copy directory ??? if make override ask confirm
+
+
+mv filename foldername >> move file in same dir(cut)
+mv foldername toFolderName >> move file in same dir(cut)
+mv filename newFilename >> rename
+mv filename1 filename2 filename3 toFolderName >> cut maltiFile
+mv foldername toFolderName >> move file in same dir(cut)
+
+be care when use rm ?????
+rm filename>>> remove === shift Delete
+rm -r foldername >> remove folder and all file inside it
+rm file1 file2 >> remove maltifile
+rm -i file1 >> ask to remove
+
+ls >> list all file or folder 
+ls -a >> list hiden file
+ls -t >> list file as last edit 
+ls -R >> list eveything
+lsusb >> list connected usb
+ls foldername >> list  all file or folder in foldername
+ls -l >> list info file or dir
+//////////////////////////////////////////////
+d rwx rwx r-x 2 coktilat coktilat 4096 Dec 9 23:49 cli
+
+d rwx rwx r-x  >> permision (الصلاحيات)
+2 >> number of dir
+coktilat >> user name who have permision 
+coktilat >> group whom have file 
+4096  >> size file bytes
+Dec 9 23:49 >> date and time last edit
+cli >> dir
+/////////////////////////////////////////////////
+- rwx rwx rwx
+(-) in first >> to tell me is file (file type) if (d) >> to tell me is directory
+(rwx) first group >>>permision >> read write and execute for owner
+(rwx) second group >>>permision >> read write and execute for group owner
+(rwx) first group >>>permision >> read write and execute for any user
+
+r>>read || w>>write || x>>execute 
+///////////////////////////////////
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apy-get install software
+sudo ==super user do
+su == super user
+file fileName >> info for file
+
+////////////////////////////////////
+change permision (نغيير الصلاحيات)
+chmod == change mode
+chown  == change ownership
+chgrp == change files group ownership
+
+
+//////////////// change mode for files///////////////////
+
+
+nano filename >>> create file
+
+
+chmod 600 file.txt => 600 in decimal = 110 000 000 = rw- --- ---
+file.txt has read & write permissions for the owner BUT
+private from group & others
+
+777 (rwx rwx rwx) => No restrictions. Not secure(فش مانع لاي حد)
+
+755 (rwx r-x r-x) => owner has no restrictions. Everyone else
+can read & excute
+
+700 (rwx --- ---) => owner has no restrictions. Others have no
+access
+
+666 (rw- rw- rw-) => all users can read & wrire only
+
+644 (rw- r-- r--) =>owner can read & write. Others can only
+read
+
+600 (rw- --- ---) =>only the owner can read & write
+/////////////////////////////////
+
+/////////////////////////////////change mode for dirctory
+r,w,x ====> means something different to directories
+
+r ===> allow directory contents (المحتويات تظهر بشرط الاكس تكون شغالة)
+w ===> allow files to be created/renamed/ deleted (بشرط الاكس تكون شغالة)
+x ===> allow you to enter a directory (مسموح تدخل عليها)
+
+////////////////////common settings for directories
+chmod 777 file.txt >> change folder
+
+777 (rwx rwx rwx) ===> no restrictions. Not secure
+
+755 (rwx r-x r-x) ==> directory owner has full access. Others
+can access/list directory but can’t create/delete files
+
+700 (rwx --- ---) ===>only the owner has full access
+////////////////////////////////////////////////
+example : change ownership from “me” to “you”
+
+1- su ==>
+
+2- password==>
+
+3- chown you file.txt >>> or foldername
+
+4- exit keyboard
+
+chgrp group2 file.txt
+
+/////////////////////////////
+kill excute anything
+
+xload >> open gui to see what is running without countnie in term
+xload & >> open gui to see what is running 
+history 
+history -c >> clear history
+
+ps >> info for excute got PID
+kill (PID)
+
+ctrl +alt+t new terminal
+
+//////////////
+
+help order
+
+help cd >>> info to help me
+man xload >> manule
+clear >>>
+/////////////////////
+
+run program
+
+less filename >>>
+g >> last line 
+1g >> first line
+/word >>> to search in file
+q >> exit
+zless folder.gz >>> zip ,....
+
+/////////////////
+
+
+
+
